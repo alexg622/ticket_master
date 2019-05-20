@@ -1,3 +1,4 @@
+#app/graphql/types/mutation_type
 module Types
   class MutationType < Types::BaseObject
 
@@ -110,7 +111,7 @@ module Types
       if ticket.destroy
         ticket
       else
-        raise GraphQL::ExecutionError, ticket.errors.full_messages(", ") 
+        raise GraphQL::ExecutionError, ticket.errors.full_messages(", ")
       end
     end
 

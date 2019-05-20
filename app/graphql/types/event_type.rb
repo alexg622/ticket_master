@@ -6,10 +6,11 @@ module Types
     field :title, String, null: true
     field :user, UserType, null: false
     field :attending_users, [UserType], null: true
+    field :tickets, [TicketType], null: true
 
     def attending_users
       object.attending_users
     end
-  
+
   end
 end

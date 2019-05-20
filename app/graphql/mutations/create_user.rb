@@ -1,3 +1,4 @@
+#app/graphql/mutations/create_user
 class Mutations::CreateUser < GraphQL::Schema::Mutation
   null true
 

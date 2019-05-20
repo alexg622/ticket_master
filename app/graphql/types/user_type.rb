@@ -1,3 +1,4 @@
+#app/graphql/types/user_type
 module Types
   class Types::UserType < Types::BaseObject
     description "A User"
@@ -11,6 +12,6 @@ module Types
     def upcoming_events
       object.upcoming_events
     end
-    
+
   end
 end
